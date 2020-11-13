@@ -1,0 +1,293 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copy of Copy of Copy of Copy of Day2 assignment.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Swetha06-sys/Assignment-2/blob/main/assignment%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Am_0X2KkqkHa",
+        "outputId": "bbe8b7b4-c319-4a76-a345-172279e1c1dd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "i = 0\n",
+        "list=[]\n",
+        "\n",
+        "for i in range(10):\n",
+        "  c=int(input())\n",
+        "  if c%2==0 :\n",
+        "    list.append(c)\n",
+        "print(list)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n",
+            "3556\n",
+            "23\n",
+            "22\n",
+            "66\n",
+            "1000\n",
+            "6\n",
+            "8\n",
+            "[2, 4, 3556, 22, 66, 1000, 6, 8]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "lojzyQ6etJY1"
+      },
+      "source": [
+        "# **Ques 2:**\n",
+        "\n",
+        "Create a notebook on LIST COMPREHENSION. This exercise is to put you in a Self learning mode"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Z-X2v_xf1VKt"
+      },
+      "source": [
+        "**# List comprehension**\n",
+        "is one of the easiest method in defining as well as creating \n",
+        "a new list using an already existing list.\n",
+        "\n",
+        "* It has the ability to identify and transform the string or tuples to list.\n",
+        "\n",
+        "* More faster and compact than other functions in python .\n",
+        "\n",
+        "* Instead of a long program or list it is user-friendly and reliable.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PtJLYtfK7cjk",
+        "outputId": "a4cf7e1f-2b8d-4d69-b228-d0f1cecbace1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "oneword = [letter for letter in 'Lets upgrade' ]\n",
+        "print(oneword) #this peints a list from a given string it means print the letters separately\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['L', 'e', 't', 's', ' ', 'u', 'p', 'g', 'r', 'a', 'd', 'e']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uoa-Uger907n",
+        "outputId": "3ecd2102-8b0d-4270-c518-3df9f49d2833",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "\n",
+        "number_dividedby4 = [c for c in range(30) if c % 4 == 0]\n",
+        "print(number_dividedby4)   #if condition\n",
+        "\n",
+        "num = [c for c in range(30) if c % 5 == 0 if c%2 == 0]\n",
+        "print(num)      #nested if"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[0, 4, 8, 12, 16, 20, 24, 28]\n",
+            "[0, 10, 20]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YjvfhujEuUPq"
+      },
+      "source": [
+        "# **Questions 3:**\n",
+        "You have seen in the videos how powerful dictionary data structure is. In this assignment, given a number n, you have to write a program that generates a dictionary d which contains (i, i*i), where i is from 1 to n (both included). Then you have to just print this dictionary d.\n",
+        "\n",
+        " Example: Input: 4 will give output as {1: 1, 2: 4, 3: 9, 4: 16} \n",
+        " \n",
+        " Input Format: Take the number n in a single line. \n",
+        " \n",
+        " Output Format: Print the dictionary d in a single line. \n",
+        " \n",
+        "# ** Example: **\n",
+        " \n",
+        " Input: 8 \n",
+        " \n",
+        " Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Mu8bneL9uwHZ",
+        "outputId": "467fb978-103b-4629-ca61-e9cda08145dc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "def dictionary():\n",
+        "  c= int(input())\n",
+        "  simple_dict={  i: i*i for i in range(1, c+1) }\n",
+        "  print(simple_dict)\n",
+        "\n",
+        "dictionary()   #prints the first testcase\n",
+        "dictionary()   #/prints the second one"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "4\n",
+            "{1: 1, 2: 4, 3: 9, 4: 16}\n",
+            "8\n",
+            "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sDXTtfZgwGan"
+      },
+      "source": [
+        "# **Questions 4:**\n",
+        "\n",
+        "\n",
+        "There is a robot which wants to go the charging point to charge itself.\n",
+        "The robot moves in a 2-D plane from the original point (0,0). The robot can\n",
+        "move toward UP, DOWN, LEFT and RIGHT with given steps.\n",
+        "The trace of robot movement is shown as the following:\n",
+        "UP 5\n",
+        "DOWN 3\n",
+        "LEFT 3\n",
+        "RIGHT 2\n",
+        "Then, the output of the program should be:\n",
+        "2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Jj_VwMxKwP0l",
+        "outputId": "076321d3-9676-42d6-ca3b-018753747f0c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "source": [
+        "import math\n",
+        "\n",
+        "dirt = int(input())\n",
+        "x, y = 0, 0 \n",
+        "x1, y1 = 0, 0\n",
+        "\n",
+        "for i in range(dirt):\n",
+        "    waystomove, step = map(str, input().strip().split(' '))\n",
+        "    if(waystomove == 'UP'):\n",
+        "        y1 += int(step)\n",
+        "    elif (waystomove == 'DOWN'):\n",
+        "        y1 -= int(step)\n",
+        "    elif(waystomove == 'LEFT'):\n",
+        "        x1 -= int(step)\n",
+        "    elif(waystomove == 'RIGHT'):\n",
+        "        x1 += int(step)\n",
+        "\n",
+        "#now the formula for the distance finding betwn is sqrt((x1-x0)**2 + (y1-y)**2)\n",
+        "#round() function returns a floating point number that is a rounded version of \n",
+        "#the specified number, with the specified number of decimals.\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(round(math.sqrt((x1**2) + (y1**2))))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "4\n",
+            "UP 5\n",
+            "DOWN 3\n",
+            "LEFT 3\n",
+            "RIGHT 2\n",
+            "2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YaKJE4UvqAR7"
+      },
+      "source": [
+        "# ***Assignment-2***\n",
+        "\n",
+        "\n",
+        "# **9th November** \n",
+        "\n",
+        "#**Qs 1**\n",
+        "\n",
+        "\n",
+        "Create an empty list. Accept 10 numbers from the user and append to it the list if it is an even number"
+      ]
+    }
+  ]
+}
